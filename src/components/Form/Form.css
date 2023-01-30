@@ -1,0 +1,14 @@
+
+container {
+    width: 50%;
+}
+.form{
+    width: 50%;
+    margin-top:135px;
+    margin-left: 250px;
+    max-height: 100px;
+}
+
+.card{
+    height: 50%;
+}

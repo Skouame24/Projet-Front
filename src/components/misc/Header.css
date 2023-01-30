@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: century;
+
+}
+
+header{
+    color: white;
+    background: #37387a;
+    background-image: url('../../images/pexels-rodnae-productions-10376258.jpg');
+    height: 100vh;
+    text-align: center;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+  
+
+
+
+.logo a{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0px 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    text-shadow: rgba(0, 0, 0, 0.7);
+}
+.logo span{
+    color: rgb(238, 58, 11);
+    font-weight: bold;
+    font-size: 2rem;
+}
