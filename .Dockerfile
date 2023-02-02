@@ -12,8 +12,4 @@ COPY . .
 
 EXPOSE 5173
 
-<<<<<<< HEAD
 CMD ["npm", "run", "dev"]
-=======
-CMD ["npm", "run", "dev"]
->>>>>>> c6c61dddea542b7af581274224720e3c49628184
