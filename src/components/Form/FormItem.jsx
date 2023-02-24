@@ -34,6 +34,7 @@ export const FormItem =  ({ item, onChange, answer })  => {
       case 'select':
         return (
           <div className="mt-2">
+           <p>{item.name}</p>
             <Form.Select aria-label={item.label} onChange={(e) => onChange(e.target.value, item.value)}>
               <option>{item.label}</option>
               {

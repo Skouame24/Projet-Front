@@ -8,8 +8,8 @@ const MenuBar = () => {
         <nav className="header">
             <div className="nav-wrapper">
                 <a className="logo" href='/'>Logo<span>S</span></a>
-                <input className="menu-btn" type="checkbox" id="menu-btn"/>
-                <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
+                {/* <input className="menu-btn" type="checkbox" id="menu-btn"/>
+                <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label> */}
 
                 <ul className="menu">
                     <li><Link  to="/">Acceuil</Link></li>

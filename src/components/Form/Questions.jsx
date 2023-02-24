@@ -52,6 +52,7 @@ export const questions = [
     items: [
  {
         label: '' ,
+        name: "REGION",
         type: 'select',
         value: "region",
         options: [ 'DISTRICT DE YAMOUSSOUKRO', 'PORO (CHEF LIEU KORHOGO)'
@@ -90,6 +91,7 @@ export const questions = [
     items: [
  {
         label: "",
+        name : "TYPE D'ENTREPRISE",
         type: 'select',
         value: "chriffre_daffaire",
         options: [ 'PETITE ENTREPRISE (Chiffre daffaires annuel hors taxes ⩽ 150 Millions FCFA)',
@@ -104,6 +106,7 @@ export const questions = [
     items: [
  {
         label: "",
+        name: "Forme Juridique",
         type: 'select',
         value: "forme_juridique",
         options: [ 'SARL', 'ENTREPRISE INDIVIDUELLE', 'SOCIETE COOPERATIVE', 'ASSOCIATION','SA'
@@ -117,6 +120,7 @@ export const questions = [
     items: [
  {
         label: "" ,
+        name : "SECTEUR D'ACTIVITE ",
         type: 'select',
         value: 'secteur',
         options: [ 'INDUSTRIE', 'SERVICE', 'COMMERCE']
@@ -141,6 +145,7 @@ export const questions = [
     items: [
  {
         label: "",
+        name : "LES DOCUMENTS LEGAUX",
         type: 'select',
         value: 'documents_legaux',
         options: [ 'DECLARATION FISCALE DEXISTENCE', 'REGISTRE DE COMMERCE','STATUTS',
@@ -156,6 +161,7 @@ export const questions = [
     items: [
  {
         label: "",
+        name: "REGIME FISCAL",
         type: 'select',
         value: "regime",
         options: [ "TAXE COMMUNALE DE L'ENTREPRENANT","TAXE D'ENTREPRENANT D'ETAT",

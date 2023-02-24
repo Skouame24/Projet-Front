@@ -4,7 +4,7 @@ import { Container, Row, Card, Button } from "react-bootstrap";
 import { useState } from "react";
 import { MultiStepForm } from './MultiStepForm';
 import { questions } from "./Questions";
-import ky from 'ky';
+import axios from 'axios';
 
 const Form = () => {
 
@@ -23,7 +23,6 @@ const Form = () => {
     }
 
     const nextButton = async () => {
-
       if (index < 17) {
         setIndex(prevIndex => prevIndex + 1);
       } else {
@@ -35,15 +34,25 @@ const Form = () => {
           values = {...values,...item};
         });
         console.log(values);
-      await ky
-        .post("https://backend-cci.xyp1od1s6o6.us-east.codeengine.appdomain.cloud/entreprise", { json: values })
-        .then(() => {
-          setPagesAnswers({});
-          setSubmitted(true);
-        })
-        .catch((e) => {});
+    
+        const requestOptions = {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(values)
+        };
+    
+        try {
+          const response = await fetch('https://backend-cci.xyp1od1s6o6.us-east.codeengine.appdomain.cloud/entreprise', requestOptions);
+          if (response.ok) {
+            setPagesAnswers({});
+            setSubmitted(true);
+          }
+        } catch (error) {
+          console.error("Une erreur s'est produite :", error);
+        }
       }
-    }
+    };
+    
 
     const onPageAnswerUpdate = (step, answersObj) => {
       setPagesAnswers({...pagesAnswers, [step]: answersObj});
